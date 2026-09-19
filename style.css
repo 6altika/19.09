@@ -1,21 +1,12 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #111;
     background-color: #f5f6f7;
 }
-
 
 header {
     text-align: center;
@@ -28,15 +19,7 @@ header {
 header h1 {
     margin: 0 0 35px;
     padding: 0;
-    font-size: 32px;
-    font-weight: 700;
     color: #111;
-}
-
-
-nav {
-    margin: 0;
-    padding: 0;
 }
 
 nav ul {
@@ -59,116 +42,57 @@ nav li {
 }
 
 nav a {
-    
     text-decoration: none;
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 17px;
-    font-weight: 500;
     color: #111;
 }
 
-nav a:hover {
-    color: #e85d04;
-}
-
-
 main {
     width: 700px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 30px 30px;
     background-color: white;
 }
 
-
 #onas {
     margin: 0;
     padding: 0;
-    display: flex;
     flex-direction: column;
 }
 
 #onas img {
     order: 1;
-    display: block;
-    width: 640px;
+    width: 650px;
     height: 400px;
     object-fit: cover;
-    margin: 0 0 10px;
-    padding: 0;
+    margin: 0 25px 0 ;
 }
 
 #onas h2 {
     order: 2;
-    margin: 0 0 18px;
-    padding: 0;
-    font-size: 24px;
-    font-weight: 700;
     color: #111;
 }
 
 #onas p {
     order: 3;
     margin: 0 0 35px;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
     color: #111;
-}
-
-
-section h2 {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 23px;
-    font-weight: 700;
-    color: #111;
-}
-
-#preimushestva {
-    margin: 0;
-    padding: 0;
-}
-
-#preimushestva h2 {
-    margin: 0 0 15px;
-    padding: 0;
 }
 
 #preimushestva ul {
-    margin: 0 0 35px;
     padding-left: 20px;
 }
 
 #preimushestva li {
     margin: 0 0 5px;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #111;
 }
-
-
-/* ПОПУЛЯРНЫЕ БЛЮДА */
-#preimushestva + section {
-    margin: 0;
-    padding: 0;
-}
-
-#preimushestva + section h2 {
-    margin: 0 0 18px;
-    padding: 0;
-}
-
 
 table {
     width: 100%;
     margin: 0;
-    padding: 0;
-    border: 1px solid #555;
+    padding: 0; 
     border-collapse: collapse;
     text-align: center;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 15px;
     color: #111;
 }
 
@@ -176,27 +100,13 @@ th,
 td {
     padding: 10px 8px;
     border: 1px solid #555;
-    text-align: center;
 }
-
-th {
-    font-size: 16px;
-    font-weight: 700;
-    color: #111;
-}
-
-td {
-    font-weight: 400;
-}
-
 
 footer {
     margin: 0;
     padding: 30px 30px;
     background-color: black;
     color: white;
-
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -204,42 +114,11 @@ footer {
 footer p {
     width: 640px;
     margin: 0 auto 10px;
-    padding: 0;
-    color: white;
-}
-
-footer p:last-child {
-    margin-bottom: 0;
 }
 
 footer a {
     text-decoration: none;
-    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     color: white;
 }
 
-footer a:hover {
-    color: #e85d04;
-}
-.scroll-top-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #197f76;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
-
-.scroll-top-button:hover {
-  opacity: 1;
-}
