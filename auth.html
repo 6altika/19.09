@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма аутентификации</title>
+    <link rel="stylesheet" href="styleformauth.css">
+      <style>
+    body {
+      background-image: url("pic1.jpeg");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+    <form action="https://httpbin.org/post"
+      method="post"
+      enctype="multipart/form-data"
+      accept-charset="UTF-8">  
+
+        <h1 style="color: white;">Вход</h1>
+        <div class="login">
+            <label class="label" for="login" style= " color: white; ">Логин:</label>
+            <input id="login"
+                   name="login"
+                   type="text"
+                   placeholder="Введите логин"
+                   required>
+        </div>
+
+        <div class="password">
+            <label class="label" for="password" style= " color: white; ">Пароль:</label>
+            <input id="password"
+                   name="password"
+                   type="password"
+                   placeholder="Введите пароль"
+                   required>
+        </div>
+
+        <div class="remember">
+            <input id="remember"
+                   name="remember"
+                   type="checkbox"
+                   value="yes">
+
+            <label for="remember" style="color: white;">
+                Запомнить меня
+            </label>
+        </div>
+
+        <button type="submit">Войти</button>
+
+    </form>
+
+</body>
+</html>

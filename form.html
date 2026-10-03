@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="styleformauth.css">
+</head>
+<body>
+    <h1>Форма обратной связи</h1>
+
+<form action="https://httpbin.org/post"
+      method="post"
+      enctype="multipart/form-data"
+      accept-charset="UTF-8">  
+
+    <div class="fullName">
+        <label class="label" for="fullName">ФИО:</label>
+        <input id="fullName" name="fullName" type="text"
+                placeholder="Введите ваше ФИО">
+    </div>
+
+    <div class="email">
+        <label class="label" for="email">Введите адрес почты:</label>
+        <input id="email" name="email" type="email"
+               placeholder="Введите почту">
+    </div>
+
+    <div>
+            <legend>Откуда вы узнали о нас?</legend>
+
+            <input id="friends" type="radio"
+                   name="about" value="friend" checked>
+            <label for="friends">От друзей</label>
+
+            <input id="spam" type="radio"
+                   name="about" value="other">
+            <label for="spam">Из сети</label>
+    </div>
+
+    <div>
+        <label class="label" for="complaintID">
+            Категория обращения
+        </label>
+        <select name="complaint" id="complaintID">
+            <option value="suggestion">Предложение</option>
+            <option value="complaint">Жалоба</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="label" for="textAreaForm">
+            Текст сообщения
+        </label>
+        <textarea name="textAreaForm" id="textAreaForm"
+                  rows="5"></textarea>
+    </div>
+
+    <div>
+        <label class="label" for="fileInput">Вложения</label>
+        <input type="file" id="fileInput" name="file">
+    </div>
+
+    <div>
+    <input type="checkbox" id="checkbox"
+           name="consent" value="yes" required>
+    <label for="checkbox">
+        Даю согласие на обработку персональных данных
+    </label>
+    </div>
+
+    <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
